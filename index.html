@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!-- Шапка -->
@@ -18,26 +18,26 @@
 
             <nav class="navigation">
                 <a href="./index.html" class="header__logo"><span class="header__logo header__logo--web">Web</span>Studio</a>
-                <ul class="navigation__list list">
-                    <li class="navigation__item"><a href="./index.html" class="navigation__link current">Студия</a></li>
-                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                <ul class="navigation__list navigation__list--placing">
+                    <li class="navigation__item navigation__item--placing"><a href="./index.html" class="navigation__link navigation__link--placing current current">Студия</a></li>
+                    <li class="navigation__item navigation__item--placing"><a href="./portfolio.html" class="navigation__link navigation__link--placing">Портфолио</a></li>
+                    <li class="navigation__item navigation__item--placing"><a href="" class="navigation__link navigation__link--placing">Контакты</a></li>
                 </ul>
             </nav>
 
-            <ul class="navigation-contacts list">
+            <ul class="navigation-contacts">
                 <li class="navigation-contacts__item">
     
-                    <a href="mailto:info@devstudio.com" class="navigation-contacts__mail">info@devstudio.com 
-                    <svg class="navigation-contacts__icon" width="16" height="12">
+                    <a href="mailto:info@devstudio.com" class="navigation-contacts__mail navigation-contacts__mail--placing">info@devstudio.com 
+                    <svg class="navigation-contacts__icon navigation-contacts__icon--placing" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-mail"></use>
                     </svg>
                     </a>
                 </li>
 
                 <li class="navigation-contacts__item">
-                    <a href="tel:+380961111111" class="navigation-contacts__tel">+38 096 111 11 11
-                        <svg class="navigation-contacts__icon" width="10" height="16">
+                    <a href="tel:+380961111111" class="navigation-contacts__tel navigation-contacts__tel--placing">+38 096 111 11 11
+                        <svg class="navigation-contacts__icon navigation-contacts__icon--placing" width="10" height="16">
                             <use href="./images/symbol-defs.svg#icon-phone"></use>
                         </svg>
                     </a>
@@ -48,17 +48,17 @@
 
     <main>
     <!-- Герой  -->
-        <section class="hero">
+        <section class="hero hero--placing">
             <div class="container">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero__button button" data-modal-open>Заказать услугу</button>
+                <h1 class="hero__title hero__title--placing">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="hero__button hero__button--placing button" data-modal__open>Заказать услугу</button>
             </div>
         </section>
 
     <!-- Приемущества -->
         <section class="benefits section">
                 <div class="container">
-                    <ul class="benefits__list list">
+                    <ul class="benefits__list">
                         <li class="benefits__item">
                             <h3 class="benefits__title">Внимание к деталям</h3>
                             <p class="benefits__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -315,7 +315,7 @@
     <footer class="footer">
         <div class="container contacts">
             <div class="address-container">
-                <a href="./index.html" class="footer__logo"><span class="footer__logo-- web">Web</span>Studio</a>
+                <a href="./index.html" class="footer__logo"><span class="footer__logo--web">Web</span>Studio</a>
                 <address class="address">
                     <div class="address__contacts">
                         <p class="address__location">г. Киев, пр-т Леси Украинки, 26</p>
@@ -376,8 +376,8 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal__button-close" data-modal-close>
-                <svg class="modal__button-close_icon" width="11" height="11">
+            <button class="modal__button--close" data-modal__close>
+                <svg class="modal__button--close-icon" width="11" height="11">
                     <use href="./images/symbol-defs.svg#icon-close-icon"></use>
             </button>
 
@@ -438,7 +438,7 @@
                         </label>
                     </div>
 
-                    <button type="submit" class="modal-submit-button">Отправить</button>
+                    <button type="submit" class="modal-submit-button ">Отправить</button>
 
                     
                     

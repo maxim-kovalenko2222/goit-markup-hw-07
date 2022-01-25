@@ -1,0 +1,14 @@
+.header__logo {
+  color: $primaryColor;
+  font-size: 26px;
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  &--web {
+    color: $hoverColor;
+  }
+}

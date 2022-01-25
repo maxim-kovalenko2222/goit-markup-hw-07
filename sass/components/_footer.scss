@@ -1,0 +1,180 @@
+.footer {
+  background-color: $footerBgColor;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  color: #ffffff;
+  font-size: 26px;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  display: inline-block;
+
+  &--web {
+    color: $hoverColor;
+  }
+}
+
+.address__location {
+  color: #ffffff;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.contacts {
+  display: flex;
+}
+
+.address__contacts {
+  margin-top: 9px;
+}
+
+.address__tel {
+  margin-top: 9px;
+}
+
+.address__mail,
+.address__tel {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+  }
+}
+
+.address-tel:hover,
+.address-tel:focus {
+  color: var(--hover-color);
+}
+
+.footer__links {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.footer__title,
+.subscription__title {
+  margin-bottom: 20px;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer__social-list {
+  @extend %list;
+  display: flex;
+}
+
+.footer__social-item:nth-child(n + 2) {
+  margin-left: 10px;
+}
+
+.footer__social-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #ffffff;
+
+  transition: background-color 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $hoverColor;
+  }
+}
+
+.subscription-box {
+  margin-left: 93px;
+  margin-top: 12px;
+}
+
+.subscription__input {
+  position: relative;
+}
+
+.subscription__email {
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $footerBgColor;
+  color: rgba(255, 255, 255, 0.6);
+  border-color: inherit;
+  outline: none;
+}
+
+.subscription-email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription__button {
+  color: #ffffff;
+  background-color: $hoverColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  text-align: center;
+  padding: 10px 62px 10px 29px;
+  margin-left: 12px;
+  height: 50px;
+  width: 200px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}
+
+.subscription__button--icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: #ffffff;
+}
