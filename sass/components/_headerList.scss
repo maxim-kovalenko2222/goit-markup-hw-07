@@ -2,91 +2,83 @@
   border-bottom: 1px solid #ececec;
 }
 
-.navigation__list {
-  @extend %list;
-}
-
-.navigation__link {
-  color: $primaryColor;
-  text-decoration: none;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  display: block;
-
-  transition: color 250ms $timingFunction;
-
-  &:hover,
-  &:focus {
-    color: $hoverColor;
-  }
-}
-
-.navigation-contacts {
-  @extend %list;
-
-  display: flex;
-  margin-left: auto;
-}
-
-.navigation-contacts__mail,
-.navigation-contacts__tel {
-  color: $secondColor;
-  text-decoration: none;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  fill: $secondColor;
-
-  transition: color 250ms $timingFunction, fill 250ms $timingFunction;
-
-  &:hover,
-  &:focus {
-    color: $hoverColor;
-    fill: $hoverColor;
-  }
-}
-
-.navigation,
 .container--navigation {
   display: flex;
   align-items: center;
 }
 
-.navigation__list--placing {
+.navigation {
   display: flex;
-  margin-left: 93px;
+  align-items: center;
+  &__list {
+    @extend %list;
+    display: flex;
+    margin-left: 93px;
+  }
+  &__link {
+    color: $primaryColor;
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.navigation__link--placing {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.navigation__item--placing:not(:last-child) {
-  margin-right: 50px;
-}
-
-.navigation-contacts__mail--placing,
-.navigation-contacts__tel--placing {
+.navigation-contacts {
+  @extend %list;
   display: flex;
-  flex-direction: row-reverse;
+  margin-left: auto;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.navigation-contacts__item:not(:last-child) {
-  margin-right: 30px;
-}
+  &__mail,
+  &__tel {
+    display: flex;
+    flex-direction: row-reverse;
 
-.navigation-contacts__icon--placing {
-  margin-right: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $secondColor;
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    fill: $secondColor;
+
+    transition: color 250ms $timingFunction, fill 250ms $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+      fill: $hoverColor;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
 }
 
 .current {

@@ -1,5 +1,7 @@
 .samples {
-  padding-top: 0;
+  &--position {
+    padding-top: 0;
+  }
 
   &__title {
     font-weight: 700;
@@ -14,31 +16,32 @@
     display: flex;
     @extend %list;
   }
-  &__item:not(:last-child) {
-    margin-right: 30px;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-}
 
-.samples__item {
-  position: relative;
-}
+  &__text {
+    position: absolute;
 
-.samples__text {
-  position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
 
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-
-  padding: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+    padding: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .samples__item::before {

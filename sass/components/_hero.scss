@@ -12,8 +12,18 @@
   background-position: center;
   background-size: cover;
 
+  &__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
   &__title {
     max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     color: #ffffff;
 
     font-weight: 900;
@@ -24,6 +34,9 @@
     text-transform: uppercase;
   }
   &__button {
+    padding: 10px 32px;
+    margin-top: 30px;
+
     color: #ffffff;
     background-color: $hoverColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -42,22 +55,4 @@
       background-color: #188ce8;
     }
   }
-}
-
-.hero--placing {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.hero__title--placing {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero__button--placing {
-  padding: 10px 32px;
-  margin-top: 30px;
 }

@@ -1,30 +1,29 @@
-.benefits__list {
-  @extend %list;
-  display: flex;
-}
+.benefits {
+  &__item {
+    width: 270px;
 
-.benefits__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.benefits__text {
-  color: $secondColor;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.benefits__item {
-  width: 270px;
-}
-
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__list {
+    @extend %list;
+    display: flex;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: $secondColor;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .benefits__item::before {
