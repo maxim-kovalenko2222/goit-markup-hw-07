@@ -1,67 +1,20 @@
 @import "utils/variables";
+@import "utils/list";
 
-body {
-  color: $primaryColor;
-  font-family: Roboto, sans-serif;
-  margin: 0;
-}
+@import "base/common";
+@import "base/reset";
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+@import "components/container";
+@import "components/button";
+@import "components/section";
+@import "components/title";
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-%list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.button {
-  cursor: pointer;
-  font-family: inherit, sans-serif;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-@import "components/headerLogo";
-@import "components/headerList";
-@import "components/hero";
-@import "components/modal";
-@import "components/benefits";
-@import "components/samples";
-@import "components/team";
-@import "components/clients";
-@import "components/footer";
+@import "layout/headerLogo";
+@import "layout/headerList";
+@import "layout/hero";
+@import "layout/modal";
+@import "layout/benefits";
+@import "layout/samples";
+@import "layout/team";
+@import "layout/clients";
+@import "layout/footer";

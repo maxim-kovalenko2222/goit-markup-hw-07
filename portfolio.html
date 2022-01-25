@@ -9,32 +9,37 @@
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!-- Шапка -->
     <header class="header">
-        <div class="container container-nav">
-            <nav class="nav">
-                <a href="./index.html" class="logo"><span class="logo web">Web</span>Studio</a>
-                <ul class="header-list list">
-                    <li class="header-item"><a href="./index.html" class="nav-list">Студия</a></li>
-                    <li class="header-item"><a href="./portfolio.html" class="nav-list current">Портфолио</a></li>
-                    <li class="header-item"><a href="" class="nav-list">Контакты</a></li>
+    
+        <div class="container container--navigation">
+    
+            <nav class="navigation">
+                <a href="./index.html" class="header__logo"><span
+                        class="header__logo header__logo--web">Web</span>Studio</a>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link current">Портфолио</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="nav-contacts list">
-                <li class="header-item">
     
-                    <a href="mailto:info@devstudio.com" class="nav-mail">info@devstudio.com
-                        <svg class="header-social-icon" width="16" height="12">
+            <ul class="navigation-contacts">
+                <li class="navigation-contacts__item">
+    
+                    <a href="mailto:info@devstudio.com" class="navigation-contacts__mail">info@devstudio.com
+                        <svg class="navigation-contacts__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-mail"></use>
                         </svg>
                     </a>
                 </li>
     
-                <li class="header-item">
-                    <a href="tel:+380961111111" class="nav-tel">+38 096 111 11 11
-                        <svg class="header-social-icon" width="10" height="16">
+                <li class="navigation-contacts__item">
+                    <a href="tel:+380961111111" class="navigation-contacts__tel">+38 096 111 11 11
+                        <svg class="navigation-contacts__icon" width="10" height="16">
                             <use href="./images/symbol-defs.svg#icon-phone"></use>
                         </svg>
                     </a>
@@ -261,64 +266,64 @@
         </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
-        <div class="container contacts">
-            <div class="address-container">
-                <a href="./index.html" class="footer-logo"><span class="footer-logo web">Web</span>Studio</a>
-                <address class="address">
-                    <div class="address-contacts">
-                        <p class="address-location">г. Киев, пр-т Леси Украинки, 26</p>
-                        <a href="mailto:info@example.com" class="address-mail">info@example.com</a>
-                        <a href="tel:+380991111111" class="address-tel">+38 099 111 11 11</a>
-                    </div>
-                </address>
-            </div>
-            <div class="footer-social-links">
-                <h3 class="footer-links-title">присоединяйтесь</h3>
-                <ul class="footer-social-list list">
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="subscription-box">
-                <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-                <div class="subscription-input">
-                    <input type="email" name="email" placeholder="E-mail" class="subscription-email">
-                    <button type="submit" class="subscription-button button">Подписаться</button>
-                    <svg class="subscription-button-icon" width="24" height="24">
-                        <use href="./images/symbol-defs.svg#icon-subscription"></use>
-                    </svg>
-            
+<footer class="footer">
+    <div class="footer__container container contacts">
+        <div class="address-container">
+            <a href="./index.html" class="footer__logo"><span class="footer__logo--web">Web</span>Studio</a>
+            <address class="address">
+                <div class="address__contacts">
+                    <p class="address__location">г. Киев, пр-т Леси Украинки, 26</p>
+                    <a href="mailto:info@example.com" class="address__mail">info@example.com</a>
+                    <a href="tel:+380991111111" class="address__tel">+38 099 111 11 11</a>
                 </div>
-            </div>
-
+            </address>
         </div>
-    </footer>
+        <div class="footer__links">
+            <h3 class="footer__title">присоединяйтесь</h3>
+            <ul class="footer__social-list list">
+                <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                        <svg class="footer__social-icon" width="20" height="20">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                        <svg class="footer__social-icon" width="20" height="20">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                        <svg class="footer__social-icon" width="20" height="20">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                        <svg class="footer__social-icon" width="20" height="20">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="subscription subscription--box">
+            <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+            <div class="subscription__input">
+                <input type="email" name="email" placeholder="E-mail" class="subscription__email">
+                <button type="submit" class="subscription__button button">Подписаться</button>
+                <svg class="subscription__button--icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-subscription"></use>
+                </svg>
+
+            </div>
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>
