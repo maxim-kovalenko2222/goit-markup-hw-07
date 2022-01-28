@@ -37,15 +37,21 @@
 
     text-align: center;
   }
+}
 
-  &__social-list {
-    @extend %list;
-    display: flex;
-    justify-content: center;
+.team-social-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+
+  &__item {
     margin-top: 16px;
+    &:nth-child(n + 2) {
+      margin-left: 10px;
+    }
   }
 
-  &__social-link {
+  &__link {
     width: 44px;
     height: 44px;
     background-color: #ffffff;
@@ -64,9 +70,6 @@
       background-color: $hoverColor;
       fill: #ffffff;
     }
-  }
-  &__social-item:nth-child(n + 2) {
-    margin-left: 10px;
   }
 }
 

@@ -1,14 +1,12 @@
-.benefits {
+.benefits-list {
+  @extend %list;
+  display: flex;
   &__item {
     width: 270px;
 
     &:not(:last-child) {
       margin-right: 30px;
     }
-  }
-  &__list {
-    @extend %list;
-    display: flex;
   }
   &__title {
     font-weight: 700;
@@ -23,7 +21,7 @@
   }
 }
 
-.benefits__item::before {
+.benefits-list__item::before {
   content: "";
   display: block;
   height: 120px;
@@ -31,25 +29,25 @@
   margin-bottom: 30px;
 }
 
-.benefits__item:nth-child(1)::before {
+.benefits-list__item:nth-child(1)::before {
   background-image: url(../images/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.benefits__item:nth-child(2)::before {
+.benefits-list__item:nth-child(2)::before {
   background-image: url(../images/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.benefits__item:nth-child(3)::before {
+.benefits-list__item:nth-child(3)::before {
   background-image: url(../images/computer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.benefits__item:nth-child(4)::before {
+.benefits-list__item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
