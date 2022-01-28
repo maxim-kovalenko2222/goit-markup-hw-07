@@ -27,10 +27,9 @@
     color: #ffffff;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include fontStyle(44px, 1.36, 0.06em);
+
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
   }
   &__button {
@@ -44,9 +43,7 @@
     border-color: transparent;
 
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+    @include fontStyle(16px, 1.87, 0.06em);
 
     transition: background-color 250ms $timingFunction;
 

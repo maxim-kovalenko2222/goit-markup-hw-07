@@ -28,18 +28,14 @@
 
   &__title {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include fontStyle(18px, 2, 0.06em);
 
     margin-bottom: 3px;
   }
   &__text {
-    color: var(--second-color);
+    color: $secondColor;
 
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
+    @include fontStyle(16px, 1.87);
   }
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -69,10 +65,8 @@
   width: 322px;
   height: 168px;
 
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
   color: #ffffff;
+  @include fontStyle(18px, 1.56);
 }
 
 .card:hover .card-overlay {

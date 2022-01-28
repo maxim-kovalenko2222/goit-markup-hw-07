@@ -16,17 +16,15 @@
     margin-left: 93px;
   }
   &__link {
-    color: $primaryColor;
-    text-decoration: none;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
     display: block;
+
     padding-top: 32px;
     padding-bottom: 32px;
+
+    color: $primaryColor;
+    text-decoration: none;
+    font-weight: 500;
+    @include fontStyle(14px, 1.14, 0.02em);
 
     transition: color 250ms $timingFunction;
 
@@ -57,9 +55,7 @@
     text-decoration: none;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include fontStyle(14px, 1.14, 0.02em);
 
     fill: $secondColor;
 

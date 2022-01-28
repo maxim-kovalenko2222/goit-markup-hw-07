@@ -7,11 +7,9 @@
   &__title-text {
     margin-bottom: 12px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @include fontStyle(20px, 1.15, 0.03em);
 
+    text-align: center;
     color: #212121;
   }
 
@@ -21,10 +19,9 @@
     margin-bottom: 10px;
   }
   &__name {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
     color: #757575;
+    @include fontStyle(12px, 1.16, 0.01em);
+
     margin-bottom: 4px;
   }
   &__input {
@@ -45,11 +42,11 @@
     }
   }
   &__icon {
+    display: inline-block;
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-    display: inline-block;
     cursor: pointer;
     pointer-events: none;
 
@@ -65,9 +62,7 @@
 
     cursor: pointer;
     height: 120px;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include fontStyle(12px, 1.16, 0.01em);
 
     transition: border-color 250ms $timingFunction;
 
@@ -77,10 +72,8 @@
     }
 
     &::placeholder {
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
+      @include fontStyle(12px, 1.16, 0.01em);
     }
   }
 }

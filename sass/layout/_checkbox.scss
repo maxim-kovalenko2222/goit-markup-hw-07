@@ -7,9 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+
+    @include fontStyle;
 
     color: $secondColor;
   }
@@ -41,11 +40,10 @@
     background-position: center;
   }
   &__link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: $hoverColor;
     margin-left: 5px;
+
+    @include fontStyle;
   }
 }
 
@@ -60,7 +58,7 @@
   border-color: transparent;
   cursor: pointer;
 
-  transition: background-color 250ms $timingFunckion;
+  transition: background-color 250ms $timingFunction;
 }
 
 .modal-submit-button:focus,

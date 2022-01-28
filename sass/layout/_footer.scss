@@ -7,15 +7,13 @@
   }
 
   &__logo {
+    display: inline-block;
+
     color: #ffffff;
-    font-size: 26px;
     text-decoration: none;
     font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
 
-    display: inline-block;
+    @include fontStyle($fs: 26px, $lh: 1.2);
 
     &--web {
       color: $hoverColor;
@@ -32,9 +30,9 @@
 
     color: #ffffff;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+
+    @include fontStyle($lh: 1.14);
+
     text-transform: uppercase;
   }
 }
@@ -48,9 +46,7 @@
     color: #ffffff;
 
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include fontStyle();
 
     margin-top: 20px;
     margin-bottom: 9px;
@@ -69,9 +65,7 @@
     text-decoration: none;
 
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include fontStyle();
 
     transition: color 250ms $timingFunction;
 
@@ -92,12 +86,13 @@
 }
 
 .footer__social-link {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: #ffffff;
 
@@ -119,9 +114,8 @@
 
   color: #ffffff;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fontStyle($lh: 1.14);
+
   text-transform: uppercase;
 }
 
@@ -151,9 +145,7 @@
     border-color: transparent;
 
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+    @include fontStyle(16px, 1.87, 0.06em);
 
     text-align: center;
     padding: 10px 62px 10px 29px;
@@ -180,9 +172,7 @@
 }
 
 .subscription__email::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
+
+  @include fontStyle(16px, 1.25, 0.03em);
 }
